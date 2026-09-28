@@ -8,6 +8,13 @@ Historical package changelogs inside old version folders remain unchanged.
 
 ### Repository
 
+- Formalized namespace responsibilities:
+  - **DabosGG** for Dabos.GG game-server-specific curated mods/modpacks/configuration packages.
+  - **NerdyGamerTools** for original mods/tools developed and released by NerdyGamerTools/Lhorath.
+- Documented **The_Nerdy_AzuPack** as a legacy namespace exception.
+- Added package-specific `CREDITS.md` files to every active 3.0 modpack.
+- Added repository-wide namespace and attribution policy documentation.
+
 - Added the **DeepNorth Update** workspace for current Valheim 1.0 migration work.
 - Initialized 3.0.0 folders for all maintained DabosGG and NerdyGamerTools packages.
 - Removed all temporary `crumb.txt` placeholder files.

@@ -1,13 +1,13 @@
-# NerdyGamerTools 3.0 Modpacks
+# NerdyGamerTools Legacy Modpack
 
 ## The Nerdy AzuPack
 
 [Open the 3.0.0 workspace](The_Nerdy_AzuPack/NerdyGamerTools-The_Nerdy_AzuPack-3.0.0/)
 
-Current state: **Rebuild / maintained-source migration**
+[Credits](The_Nerdy_AzuPack/NerdyGamerTools-The_Nerdy_AzuPack-3.0.0/CREDITS.md)
 
-Current active manifest dependency:
+The Nerdy AzuPack is a **legacy exception** that predates the current namespace policy.
 
-- `denikson-BepInExPack_Valheim-5.4.2351`
+It is a curated third-party modpack and is **not** representative of the intended NerdyGamerTools namespace going forward. Future curated server modpacks should be published under **DabosGG**.
 
-The historical 1.0.0 mod collection is documented in the 3.0 README but is not being carried forward directly. The pack will be rebuilt from maintained Valheim 1.0 sources and/or replacements.
+NerdyGamerTools is reserved for original mods/tools developed and released by NerdyGamerTools/Lhorath.

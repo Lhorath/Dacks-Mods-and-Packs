@@ -78,6 +78,10 @@ For 3.0, this package should:
 - [ ] Update this README history whenever a skill dependency is added or replaced.
 - [ ] Mark the pack release-ready only after the replacement set is tested.
 
+## Credits
+
+See [CREDITS.md](CREDITS.md) for attribution to the authors/projects whose work is represented by this modpack.
+
 ## History policy
 
 The versioned packages outside **DeepNorth Update** remain the authoritative historical snapshots. This 3.0.0 folder is the working migration package and may change until compatibility testing is complete.

@@ -91,6 +91,10 @@ The rebuild should instead:
 - [ ] Test the final dependency set on Valheim 1.0.
 - [ ] Update this README when each feature is restored or replaced.
 
+## Credits
+
+See [CREDITS.md](CREDITS.md) for attribution to the authors/projects whose work is represented by this modpack.
+
 ## History policy
 
 The historical 1.0.0 snapshot outside **DeepNorth Update** remains unchanged and is the authoritative record of the original AzuPack dependency set.

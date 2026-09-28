@@ -9,6 +9,21 @@ The repository now has two distinct purposes:
 
 > Package versions such as `1.0.0`, `2.0.0`, and `3.0.0` are package versions. They are not Valheim game-version numbers.
 
+## Publishing namespaces
+
+This repository uses two namespaces with an important distinction:
+
+| Namespace | Meaning |
+| --- | --- |
+| **DabosGG** | Curated mods, configurations, and modpacks published specifically for **Dabos.GG game servers** |
+| **NerdyGamerTools** | **Original mods and tools** developed and released by NerdyGamerTools/Lhorath |
+
+DabosGG modpacks depend heavily on the work of third-party Valheim mod authors. Each maintained modpack includes a dedicated `CREDITS.md` so those creators are clearly attributed.
+
+**The_Nerdy_AzuPack** is retained as a legacy exception because it predates this policy; future curated server modpacks belong under DabosGG.
+
+See [Namespace and Attribution Policy](docs/NAMESPACE-POLICY.md).
+
 ## Current 3.0 work
 
 Active migration work lives in **[DeepNorth Update](DeepNorth%20Update/)**.
@@ -148,4 +163,6 @@ Depending on the package, that includes:
 
 ## Credits
 
-These packs depend on the work of the wider Valheim modding community. Historical manifests remain the authoritative record of exactly which third-party projects were included in each archived release.
+DabosGG packages are curated server packages and do not claim authorship of their third-party dependencies. Active modpacks contain package-specific `CREDITS.md` files identifying the author/namespaces behind included mods.
+
+Historical manifests remain the authoritative dependency record for archived releases. Upstream project licenses and copyright terms continue to apply.

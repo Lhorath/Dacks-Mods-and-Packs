@@ -60,6 +60,10 @@ Beginning with the 1.x generation, the pack was split into component packages. T
 - [ ] Confirm configs from the component packs coexist correctly.
 - [ ] Mark the aggregate pack release-ready only after all three component packs pass validation.
 
+## Credits
+
+See [CREDITS.md](CREDITS.md) for attribution to the authors/projects whose work is represented by this modpack.
+
 ## History policy
 
 Historical versions outside **DeepNorth Update** remain unchanged and preserve the original release structure.

@@ -1,5 +1,7 @@
 # NerdyGamerTools AutoBroadcaster
 
+**Original NerdyGamerTools release:** AutoBroadcaster is software developed and released under the NerdyGamerTools namespace, rather than a DabosGG curated server modpack.
+
 Repository index for the historical packaged **Nerdy Gamer Tools AutoBroadcaster** releases and the current Deep North packaging work.
 
 ## Current development

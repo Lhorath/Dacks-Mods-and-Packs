@@ -1,5 +1,7 @@
 # The Nerdy AzuPack
 
+> **Legacy namespace note:** This curated modpack predates the current repository policy that reserves NerdyGamerTools for original mods/tools. It remains here for historical continuity; future curated Dabos.GG server modpacks belong under DabosGG.
+
 Repository index for the historical **The Nerdy AzuPack** release and the current 3.0 rebuild.
 
 Latest historical snapshot: **1.0.0**

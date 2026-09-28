@@ -114,6 +114,10 @@ These dependencies had already left the pack before the 2.0 generation:
 - [ ] Document known incompatibilities.
 - [ ] Mark the package release-ready only after runtime testing is complete.
 
+## Credits
+
+See [CREDITS.md](CREDITS.md) for attribution to the authors/projects whose work is represented by this modpack.
+
 ## History policy
 
 The versioned packages outside **DeepNorth Update** remain the authoritative historical snapshots. This 3.0.0 folder is the working migration package and may change until compatibility testing is complete.

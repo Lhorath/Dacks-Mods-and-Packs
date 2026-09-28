@@ -6,6 +6,10 @@
 
 AutoBroadcaster is a dedicated-server scheduled broadcast mod for Valheim.
 
+## Namespace
+
+Unlike DabosGG server modpacks, **NerdyGamerTools AutoBroadcaster is an original NerdyGamerTools/Lhorath software release**. Third-party framework dependencies remain the work of their respective projects.
+
 The maintained source repository currently documents **AutoBroadcaster 2.0.0** as rebuilt for **Valheim 1.0.16**:
 
 **https://github.com/Lhorath/NGT-AutoBroadcaster**
