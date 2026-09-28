@@ -1,39 +1,53 @@
-# Deep North / Valheim 1.0 — 3.0 Migration Workspace
+# Deep North / Valheim 1.0 — 3.0 Workspace
 
-This directory is the working area for establishing **Valheim 1.0 / Deep North compatibility** across the DabosGG and NerdyGamerTools packages.
+This directory contains the active **3.0 generation** of the DabosGG and NerdyGamerTools packages for the Valheim 1.0 / Deep North era.
 
-All packages in this workspace are initialized as **3.0.0**.
+The dependency-selection/reset pass is now complete for the current package structure. A 3.0 folder being present does **not** mean that package has completed runtime validation.
 
-> **3.0.0 currently means migration candidate, not compatibility certification.**
->
-> Historical dependency versions are carried forward as audit baselines so each dependency can be checked, replaced, updated, or removed deliberately.
+## Current package state
 
-## Packages
-
-| Namespace | Package | Type | 3.0 workspace |
+| Namespace | Package | Current 3.0 state | Dependency state |
 | --- | --- | --- | --- |
-| DabosGG | DabosGG Vanilla Server Pack | Modpack | [3.0.0](DabosGG/MODPACKS/DabosGG_Vanilla_Server_Pack/DabosGG-DabosGG_Vanilla_Server_Pack-3.0.0/) |
-| DabosGG | DabosGG New Skills Pack | Modpack | [3.0.0](DabosGG/MODPACKS/DabosGG_New_Skills_Pack/DabosGG-DabosGG_New_Skills_Pack-3.0.0/) |
-| DabosGG | DabosGG New Content Pack | Modpack | [3.0.0](DabosGG/MODPACKS/DabosGG_New_Content_Pack/DabosGG-DabosGG_New_Content_Pack-3.0.0/) |
-| DabosGG | DabosGG Modded Server Pack | Aggregate modpack | [3.0.0](DabosGG/MODPACKS/DabosGG_Modded_Server_Pack/DabosGG-DabosGG_Modded_Server_Pack-3.0.0/) |
-| NerdyGamerTools | The Nerdy AzuPack | Modpack | [3.0.0](NerdyGamerTools/MODPACKS/The_Nerdy_AzuPack/NerdyGamerTools-The_Nerdy_AzuPack-3.0.0/) |
-| NerdyGamerTools | AutoBroadcaster | Server mod | [3.0.0](NerdyGamerTools/MODS/NerdyGamerTools_AutoBroadcaster/NerdyGamerTools-NerdyGamerTools_AutoBroadcaster-3.0.0/) |
+| DabosGG | [Vanilla Server Pack](DabosGG/MODPACKS/DabosGG_Vanilla_Server_Pack/DabosGG-DabosGG_Vanilla_Server_Pack-3.0.0/) | Runtime/client testing | 6 selected dependencies |
+| DabosGG | [New Skills Pack](DabosGG/MODPACKS/DabosGG_New_Skills_Pack/DabosGG-DabosGG_New_Skills_Pack-3.0.0/) | Replacement search | BepInEx only |
+| DabosGG | [New Content Pack](DabosGG/MODPACKS/DabosGG_New_Content_Pack/DabosGG-DabosGG_New_Content_Pack-3.0.0/) | Runtime/client/world testing | 17 selected dependencies |
+| DabosGG | [Modded Server Pack](DabosGG/MODPACKS/DabosGG_Modded_Server_Pack/DabosGG-DabosGG_Modded_Server_Pack-3.0.0/) | Waiting on component packs | Aggregate of the three DabosGG component packs only |
+| NerdyGamerTools | [The Nerdy AzuPack](NerdyGamerTools/MODPACKS/The_Nerdy_AzuPack/NerdyGamerTools-The_Nerdy_AzuPack-3.0.0/) | Rebuild/source migration | BepInEx only |
+| NerdyGamerTools | [AutoBroadcaster](NerdyGamerTools/MODS/NerdyGamerTools_AutoBroadcaster/NerdyGamerTools-NerdyGamerTools_AutoBroadcaster-3.0.0/) | Packaging/source synchronization | Package scaffold pending matching current build |
 
-## Migration order
+## DabosGG dependency model
+
+```text
+DabosGG Modded Server Pack 3.0.0
+├── DabosGG Vanilla Server Pack 3.0.0
+├── DabosGG New Skills Pack 3.0.0
+└── DabosGG New Content Pack 3.0.0
+```
+
+The aggregate pack does not directly manage individual mods.
+
+## Migration rules
+
+- Historical package folders outside this workspace remain unchanged.
+- Do not copy old DLLs into a 3.0 package unless that exact binary has been deliberately validated.
+- Do not preserve a stale dependency merely because it existed in an older package.
+- Removed dependencies can return when maintained updates or replacements are available.
+- Build configs against the actual current mod version rather than blindly copying old config files.
+- Keep each package README and CHANGELOG synchronized with manifest changes.
+- Mark a package release-ready only after its applicable runtime tests pass.
+
+## Recommended testing order
 
 1. DabosGG Vanilla Server Pack
-2. DabosGG New Skills Pack
+2. DabosGG New Skills Pack after replacement mods are selected
 3. DabosGG New Content Pack
 4. DabosGG Modded Server Pack
-5. The Nerdy AzuPack
-6. AutoBroadcaster 3.0 packaging/source synchronization
+5. The Nerdy AzuPack after maintained sources/replacements are selected
+6. AutoBroadcaster packaging/source synchronization
 
-## Rules for this workspace
+Repository-wide status:
 
-- Historical packages outside this directory remain untouched.
-- Do not assume an old dependency version works with Valheim 1.0.
-- Update manifests only after checking the actual maintained package/version.
-- Do not copy historical DLLs into 3.0 unless they have been explicitly validated.
-- Rebuild configs from current mod versions when config schemas have changed.
-- Every 3.0 README keeps a record of dependencies that are still included and dependencies that were removed from earlier package history.
-- Once a package passes validation, its README and the repository compatibility matrix should be updated together.
+- [Compatibility Matrix](../docs/COMPATIBILITY.md)
+- [Migration Tracker](../docs/VALHEIM-1.0-MIGRATION.md)
+- [Version History](../docs/VERSION-HISTORY.md)
+- [Repository Changelog](../CHANGELOG.md)

@@ -1,14 +1,24 @@
 # DabosGG Modded Server Pack
 
-Repository index for the historical **DabosGG Modded Server Pack** releases.
+Repository index for the historical **DabosGG Modded Server Pack** releases and the current 3.0 migration package.
 
-Latest archived snapshot: **1.5.0**
+Latest historical snapshot: **1.5.0**
 
-Current Valheim 1.0 status: **🟡 Needs validation/rebuild**
+Current migration candidate: **[3.0.0](../../../DeepNorth%20Update/DabosGG/MODPACKS/DabosGG_Modded_Server_Pack/DabosGG-DabosGG_Modded_Server_Pack-3.0.0/)**
 
-This is the aggregate DabosGG server pack. Historically it pulls together the Vanilla Server Pack, New Skills Pack, and New Content Pack along with server configuration.
+Current status: **🛠️ Aggregate defined; waiting on component-pack validation**
 
-## Preserved versions
+## 3.0 design
+
+The 3.0 Modded Server Pack is a pure aggregate. Its manifest contains only:
+
+- `DabosGG-DabosGG_Vanilla_Server_Pack-3.0.0`
+- `DabosGG-DabosGG_New_Skills_Pack-3.0.0`
+- `DabosGG-DabosGG_New_Content_Pack-3.0.0`
+
+Individual mods should not be added directly to this package. They belong in the appropriate component pack.
+
+## Preserved historical versions
 
 - 0.0.1
 - 1.0.0
@@ -19,15 +29,14 @@ This is the aggregate DabosGG server pack. Historically it pulls together the Va
 - 1.4.0
 - 1.5.0
 
-## Migration note
+## Next step
 
-This package should be rebuilt **after** the three component DabosGG packs have been validated for Valheim 1.0.
-
-The historical 1.5.0 snapshot references 1.5.0 versions of the component packs, while newer 2.0.0 snapshots exist for those components. Do not treat those version numbers as Valheim compatibility indicators.
+Validate the Vanilla, Skills, and Content 3.0 packs first, then test the complete aggregate on a clean client/server installation.
 
 See:
 
+- [3.0 package README](../../../DeepNorth%20Update/DabosGG/MODPACKS/DabosGG_Modded_Server_Pack/DabosGG-DabosGG_Modded_Server_Pack-3.0.0/)
 - [Compatibility Matrix](../../../docs/COMPATIBILITY.md)
-- [Valheim 1.0 Migration Tracker](../../../docs/VALHEIM-1.0-MIGRATION.md)
+- [Migration Tracker](../../../docs/VALHEIM-1.0-MIGRATION.md)
 
-Historical version folders are preserved as original release snapshots and should not be rewritten merely to correct stale documentation.
+Historical version folders remain unchanged.

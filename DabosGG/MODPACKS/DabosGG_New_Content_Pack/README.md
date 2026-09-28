@@ -1,14 +1,27 @@
 # DabosGG New Content Pack
 
-Repository index for the historical **DabosGG New Content Pack** releases.
+Repository index for the historical **DabosGG New Content Pack** releases and the current 3.0 migration package.
 
-Latest archived snapshot: **2.0.0**
+Latest historical snapshot: **2.0.0**
 
-Current Valheim 1.0 status: **🟡 Needs validation**
+Current migration candidate: **[3.0.0](../../../DeepNorth%20Update/DabosGG/MODPACKS/DabosGG_New_Content_Pack/DabosGG-DabosGG_New_Content_Pack-3.0.0/)**
 
-This package groups mods that add substantial new gameplay content such as creatures, equipment, building pieces, NPC/marketplace systems, map features, and other gameplay additions.
+Current status: **🛠️ Dependency set established; runtime/client/world testing pending**
 
-## Preserved versions
+## 3.0 direction
+
+The New Content Pack now has a selected **17-dependency** Valheim 1.0 baseline.
+
+The 3.0 migration:
+
+- updates ten carried-forward dependencies;
+- adds seven new dependencies;
+- removes fourteen dependencies from the historical 2.0 baseline;
+- preserves both current and removed dependency history in the 3.0 README.
+
+The current pack covers framework support, map additions, progression/content systems, backpacks, Therzie content, archery, OdinPlus building/equipment additions, and server-side map functionality.
+
+## Preserved historical versions
 
 - 1.0.0
 - 1.1.0
@@ -19,15 +32,10 @@ This package groups mods that add substantial new gameplay content such as creat
 - 1.5.0
 - 2.0.0
 
-## Migration note
-
-The archived 2.0.0 package predates Valheim 1.0. Its dependencies and configs must be audited individually before it is used on a Valheim 1.0 server.
-
-Particular attention should be paid to biome/content mods, inventory changes, NPC/marketplace systems, world content, and anything that historically supplemented unfinished biomes.
-
 See:
 
+- [3.0 package README](../../../DeepNorth%20Update/DabosGG/MODPACKS/DabosGG_New_Content_Pack/DabosGG-DabosGG_New_Content_Pack-3.0.0/)
 - [Compatibility Matrix](../../../docs/COMPATIBILITY.md)
-- [Valheim 1.0 Migration Tracker](../../../docs/VALHEIM-1.0-MIGRATION.md)
+- [Migration Tracker](../../../docs/VALHEIM-1.0-MIGRATION.md)
 
-Historical version folders remain unchanged as release records.
+Historical version folders remain unchanged.

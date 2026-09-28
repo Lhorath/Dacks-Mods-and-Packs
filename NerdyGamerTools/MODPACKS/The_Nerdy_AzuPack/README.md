@@ -1,26 +1,33 @@
 # The Nerdy AzuPack
 
-Repository index for **The Nerdy AzuPack**.
+Repository index for the historical **The Nerdy AzuPack** release and the current 3.0 rebuild.
 
-Latest archived snapshot: **1.0.0**
+Latest historical snapshot: **1.0.0**
 
-Current Valheim 1.0 status: **🟡 Needs validation**
+Current migration candidate: **[3.0.0](../../../DeepNorth%20Update/NerdyGamerTools/MODPACKS/The_Nerdy_AzuPack/NerdyGamerTools-The_Nerdy_AzuPack-3.0.0/)**
 
-The Nerdy AzuPack is a curated collection of Azumatt's Valheim quality-of-life and gameplay-enhancing mods, with supporting dependencies included through the package manifest.
+Current status: **🛠️ Rebuild / maintained-source migration**
 
-## Preserved versions
+## 3.0 direction
+
+The historical mod dependency set has been removed from the active 3.0 manifest.
+
+Current dependency:
+
+- `denikson-BepInExPack_Valheim-5.4.2351`
+
+The dependency audit found that some historical Azumatt mods received Valheim 1.0-era fixes, while other dependencies never received a suitable maintained upstream 1.0 path. The old Thunderstore dependency list is therefore not being frozen into the new package.
+
+The next AzuPack build should be assembled from maintained current sources and/or suitable replacements.
+
+## Preserved historical versions
 
 - 1.0.0
 
-## Migration note
-
-The historical 1.0.0 README is intentionally minimal. A future current release should document the final dependency set, installation expectations, configuration interactions, known conflicts, and client/server requirements.
-
-Every dependency should be checked for its maintained Valheim 1.0-compatible version before publishing an updated package.
-
 See:
 
+- [3.0 package README](../../../DeepNorth%20Update/NerdyGamerTools/MODPACKS/The_Nerdy_AzuPack/NerdyGamerTools-The_Nerdy_AzuPack-3.0.0/)
 - [Compatibility Matrix](../../../docs/COMPATIBILITY.md)
-- [Valheim 1.0 Migration Tracker](../../../docs/VALHEIM-1.0-MIGRATION.md)
+- [Migration Tracker](../../../docs/VALHEIM-1.0-MIGRATION.md)
 
-Historical version folders remain unchanged as release records.
+Historical version folders remain unchanged.

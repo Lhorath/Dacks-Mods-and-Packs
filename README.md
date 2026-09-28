@@ -1,104 +1,151 @@
 # Dack's Mods & Packs
 
-Historical archive and active maintenance index for Valheim mods and modpacks published under the **DabosGG** and **NerdyGamerTools** namespaces.
+Historical archive and active Valheim 1.0 migration workspace for mods and modpacks published under the **DabosGG** and **NerdyGamerTools** namespaces.
 
-This repository preserves complete packaged release snapshots while providing a central place to track compatibility work for modern Valheim releases.
+The repository now has two distinct purposes:
 
-> **Important:** A package being present here does not mean it is compatible with the current version of Valheim.
->
-> Package versions such as `1.0.0` or `2.0.0` are the package's own versions. They are **not** Valheim version numbers.
+- preserve the original historical release snapshots exactly as they were packaged;
+- build and document the new **3.0 generation** for Valheim 1.0 / Deep North.
 
-## Valheim 1.0 migration
+> Package versions such as `1.0.0`, `2.0.0`, and `3.0.0` are package versions. They are not Valheim game-version numbers.
 
-Valheim 1.0 released on **September 9, 2026**. The historical packages in this repository were created across multiple earlier Valheim releases, so compatibility is being reviewed package by package.
+## Current 3.0 work
 
-### Deep North / 3.0 workspace
+Active migration work lives in **[DeepNorth Update](DeepNorth%20Update/)**.
 
-The active compatibility work now lives in **[DeepNorth Update](DeepNorth%20Update/)**. Every maintained package has been initialized as a **3.0.0 migration candidate** with a fresh manifest, changelog, and dependency-history README.
+The dependency-selection/reset pass has now been completed for the current 3.0 package structure. Runtime testing, replacement selection, source migration, configuration work, and packaging still remain where noted.
 
-The 3.0 manifests are starting baselines and should **not** be interpreted as tested Valheim 1.0 releases until their dependency and runtime audits are complete.
+| Namespace | Package | 3.0 state | Current dependency direction |
+| --- | --- | --- | --- |
+| DabosGG | [Vanilla Server Pack](DeepNorth%20Update/DabosGG/MODPACKS/DabosGG_Vanilla_Server_Pack/DabosGG-DabosGG_Vanilla_Server_Pack-3.0.0/) | Runtime/client testing | 6 maintained Valheim 1.0 dependencies; QoL-focused; no vanilla-client/crossplay guarantee |
+| DabosGG | [New Skills Pack](DeepNorth%20Update/DabosGG/MODPACKS/DabosGG_New_Skills_Pack/DabosGG-DabosGG_New_Skills_Pack-3.0.0/) | Replacement search | BepInEx only while maintained skill/progression mods are identified |
+| DabosGG | [New Content Pack](DeepNorth%20Update/DabosGG/MODPACKS/DabosGG_New_Content_Pack/DabosGG-DabosGG_New_Content_Pack-3.0.0/) | Runtime/client/world testing | 17-dependency Valheim 1.0 content baseline |
+| DabosGG | [Modded Server Pack](DeepNorth%20Update/DabosGG/MODPACKS/DabosGG_Modded_Server_Pack/DabosGG-DabosGG_Modded_Server_Pack-3.0.0/) | Waiting on component packs | Aggregate only: Vanilla + New Skills + New Content |
+| NerdyGamerTools | [The Nerdy AzuPack](DeepNorth%20Update/NerdyGamerTools/MODPACKS/The_Nerdy_AzuPack/NerdyGamerTools-The_Nerdy_AzuPack-3.0.0/) | Rebuild/source migration | BepInEx only while maintained sources/replacements are selected |
+| NerdyGamerTools | [AutoBroadcaster](DeepNorth%20Update/NerdyGamerTools/MODS/NerdyGamerTools_AutoBroadcaster/NerdyGamerTools-NerdyGamerTools_AutoBroadcaster-3.0.0/) | Packaging/source synchronization | 3.0 package scaffold; maintained source currently documents the 2.0.0 Valheim 1.0.16 rebuild |
 
-See:
+## DabosGG 3.0 structure
 
-- [Compatibility Matrix](docs/COMPATIBILITY.md)
-- [Valheim 1.0 Migration Tracker](docs/VALHEIM-1.0-MIGRATION.md)
-- [Repository Version History](docs/VERSION-HISTORY.md)
+The full DabosGG modded stack is deliberately modular:
 
-### Status legend
+```text
+DabosGG Modded Server Pack 3.0.0
+├── DabosGG Vanilla Server Pack 3.0.0
+├── DabosGG New Skills Pack 3.0.0
+└── DabosGG New Content Pack 3.0.0
+```
 
-| Status | Meaning |
-| --- | --- |
-| 🟢 **Updated** | A current rebuild exists for the stated Valheim target. |
-| 🟡 **Needs validation** | Historical package has not completed Valheim 1.0 compatibility review. |
-| 🛠️ **Migration work** | Package is being rebuilt, reconfigured, or dependency-audited. |
-| 📦 **Legacy archive** | Preserved for historical/reference use rather than current deployment. |
-| ❌ **Incompatible** | Confirmed incompatible with the stated Valheim target. |
+The aggregate **Modded Server Pack should never directly list individual mods**. Individual dependencies belong only in the appropriate component pack.
 
-## Package index
+### Vanilla Server Pack
 
-### DabosGG
+The 3.0 pack is now a maintained **quality-of-life** baseline rather than a crossplay-first package.
 
-| Package | Purpose | Latest archived snapshot | Valheim 1.0 status |
-| --- | --- | ---: | --- |
-| [DabosGG Modded Server Pack](DabosGG/MODPACKS/DabosGG_Modded_Server_Pack/) | Main aggregate server pack | 1.5.0 | 🛠️ 3.0 migration scaffold initialized |
-| [DabosGG New Content Pack](DabosGG/MODPACKS/DabosGG_New_Content_Pack/) | New creatures, equipment, systems, building/content mods | 2.0.0 | 🛠️ 3.0 migration scaffold initialized |
-| [DabosGG New Skills Pack](DabosGG/MODPACKS/DabosGG_New_Skills_Pack/) | Additional skill/progression mods | 2.0.0 | 🛠️ 3.0 migration scaffold initialized |
-| [DabosGG Vanilla Server Pack](DabosGG/MODPACKS/DabosGG_Vanilla_Server_Pack/) | QoL/server additions intended to stay close to vanilla | 2.0.0 | 🛠️ 3.0 migration scaffold initialized |
+Current manifest:
 
-The Modded Server Pack historically aggregates the Vanilla, New Skills, and New Content packs plus server configuration.
+- `denikson-BepInExPack_Valheim-5.4.2351`
+- `ValheimModding-Jotunn-2.30.2`
+- `Advize-PlantEasily-2.2.2`
+- `Advize-PlantEverything-1.21.3`
+- `ValheimModding-HookGenPatcher-0.0.4`
+- `Searica-AdvancedTerrainModifiers-1.5.4`
 
-### NerdyGamerTools
+Removed historical QoL dependencies remain candidates for reintroduction if maintained updates or replacements become available.
 
-| Package | Purpose | Latest archived snapshot | Active/current source | Valheim 1.0 status |
-| --- | --- | ---: | --- | --- |
-| [NerdyGamerTools AutoBroadcaster](NerdyGamerTools/MODS/NerdyGamerTools_AutoBroadcaster/) | Dedicated-server scheduled broadcasts | 1.0.1 | [2.0.0 source](https://github.com/Lhorath/NGT-AutoBroadcaster) | 🛠️ 3.0 packaging scaffold initialized |
-| [The Nerdy AzuPack](NerdyGamerTools/MODPACKS/The_Nerdy_AzuPack/) | Curated Azumatt QoL/gameplay collection | 1.0.0 | — | 🛠️ 3.0 migration scaffold initialized |
+### New Skills Pack
 
-### AutoBroadcaster source repository
+All historical Smoothbrain skill dependencies have been removed from the active 3.0 manifest because they have not yet been brought forward for the intended Valheim 1.0 stack.
 
-The maintained source for **Nerdy Gamer Tools AutoBroadcaster** lives here:
+Current manifest:
+
+- `denikson-BepInExPack_Valheim-5.4.2351`
+
+The package remains active, but is now explicitly looking for maintained skill/progression mods.
+
+### New Content Pack
+
+The 3.0 dependency-selection pass established a new 17-dependency content baseline containing updated historical mods plus new Valheim 1.0-era dependencies.
+
+See the [3.0 package README](DeepNorth%20Update/DabosGG/MODPACKS/DabosGG_New_Content_Pack/DabosGG-DabosGG_New_Content_Pack-3.0.0/) for the complete current list and removal history.
+
+### Modded Server Pack
+
+The 3.0 aggregate contains only:
+
+- `DabosGG-DabosGG_Vanilla_Server_Pack-3.0.0`
+- `DabosGG-DabosGG_New_Skills_Pack-3.0.0`
+- `DabosGG-DabosGG_New_Content_Pack-3.0.0`
+
+## NerdyGamerTools 3.0
+
+### The Nerdy AzuPack
+
+The old 1.0.0 dependency collection has been cleared from the active 3.0 manifest.
+
+Current manifest:
+
+- `denikson-BepInExPack_Valheim-5.4.2351`
+
+Several historical Azumatt mods did receive Valheim 1.0 fixes, but the old Thunderstore package lines are not being used as the basis of the new pack. The AzuPack is now in a **maintained-source / replacement rebuild phase**.
+
+### AutoBroadcaster
+
+Maintained source repository:
 
 **https://github.com/Lhorath/NGT-AutoBroadcaster**
 
-The source repository currently contains the **2.0.0 Valheim 1.0.16 rebuild**. The Deep North workspace initializes a 3.0.0 packaging target but intentionally does not relabel or copy the historical 1.0.1 DLL.
+The source repository currently documents **AutoBroadcaster 2.0.0** as rebuilt for **Valheim 1.0.16**.
+
+The Deep North workspace contains a **3.0.0 package scaffold**, but no historical DLL has been relabeled as 3.0. A matching current build should be packaged before that candidate is treated as releasable.
+
+## Documentation
+
+- [Repository Changelog](CHANGELOG.md)
+- [Deep North / 3.0 Workspace](DeepNorth%20Update/)
+- [Compatibility Matrix](docs/COMPATIBILITY.md)
+- [Valheim 1.0 Migration Tracker](docs/VALHEIM-1.0-MIGRATION.md)
+- [Repository Version History](docs/VERSION-HISTORY.md)
 
 ## Repository layout
 
 ```text
 Dacks-Mods-and-Packs/
 ├── README.md
-├── DeepNorth Update/       # Active 3.0.0 compatibility workspace
-├── docs/
-│   ├── COMPATIBILITY.md
-│   ├── VALHEIM-1.0-MIGRATION.md
-│   └── VERSION-HISTORY.md
-├── DabosGG/                # Historical archive
-└── NerdyGamerTools/        # Historical archive
+├── CHANGELOG.md
+├── DeepNorth Update/       # Active 3.0 migration packages
+├── docs/                   # Current compatibility/migration documentation
+├── DabosGG/                # Historical DabosGG archive
+└── NerdyGamerTools/        # Historical NerdyGamerTools archive
 ```
-
-The historical namespace folders remain immutable release history wherever practical. The **DeepNorth Update** directory is where 3.0 migration manifests, documentation, configs, and rebuilt binaries should be assembled.
 
 ## Archive policy
 
-Historical version folders may include old manifests, configs, documentation, icons, compiled DLLs, and server snapshots. They are intentionally preserved.
+Historical version-numbered folders are release snapshots. They may contain old manifests, configs, README files, changelogs, icons, DLLs, or server files.
 
-Do not rewrite historical packages merely to make them look current. Current migration work belongs under **DeepNorth Update** until a validated release is ready.
+Those historical files are intentionally preserved, even when their text or dependency versions are now outdated.
 
-## Maintainer workflow
+Current information belongs in:
 
-1. Start in [DeepNorth Update](DeepNorth%20Update/).
-2. Audit every baseline dependency and its maintained replacement, if needed.
-3. Confirm BepInEx/Jotunn requirements.
-4. Review or rebuild packaged configuration files.
-5. Test game startup and world loading.
-6. Test dedicated-server startup where applicable.
-7. Test client/server requirements and crossplay behavior where applicable.
-8. Update the 3.0 README history when dependencies are added, removed, or replaced.
-9. Update changelog and manifest.
-10. Mark compatibility only after testing.
+- package-level README files;
+- the **DeepNorth Update** workspace;
+- repository-wide documentation.
+
+## 3.0 release policy
+
+A 3.0 package should only be treated as ready when its dependency set is finalized **and** the relevant runtime tests have passed.
+
+Depending on the package, that includes:
+
+- clean game startup;
+- BepInEx/Jotunn load validation;
+- existing-world and new-world loading;
+- dedicated-server startup;
+- client installation requirements;
+- multiplayer behavior;
+- configuration compatibility;
+- cross-pack conflict testing;
+- representative gameplay testing.
 
 ## Credits
 
-These packs depend on the work of the wider Valheim modding community. Individual manifests and historical release documentation remain the authoritative record of which creators and dependencies were included in each packaged version.
-
-This repository exists both to preserve that history and to make future maintenance easier.
+These packs depend on the work of the wider Valheim modding community. Historical manifests remain the authoritative record of exactly which third-party projects were included in each archived release.

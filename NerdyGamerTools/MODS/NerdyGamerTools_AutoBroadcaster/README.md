@@ -1,45 +1,44 @@
 # NerdyGamerTools AutoBroadcaster
 
-Repository index for the packaged **Nerdy Gamer Tools AutoBroadcaster** archive.
+Repository index for the historical packaged **Nerdy Gamer Tools AutoBroadcaster** releases and the current Deep North packaging work.
 
 ## Current development
 
-Active source repository:
+Maintained source repository:
 
 **https://github.com/Lhorath/NGT-AutoBroadcaster**
 
-The source repository currently contains **AutoBroadcaster 2.0.0**, rebuilt for **Valheim 1.0.16**.
+Current documented source version: **2.0.0**
 
-This archive currently preserves packaged versions through **1.0.1**.
+Documented source target: **Valheim 1.0.16**
 
-| Location | Version |
-| --- | ---: |
-| Dacks-Mods-and-Packs historical package archive | 1.0.1 |
-| [NGT-AutoBroadcaster source repository](https://github.com/Lhorath/NGT-AutoBroadcaster) | 2.0.0 |
+Current Deep North package scaffold: **[3.0.0](../../../DeepNorth%20Update/NerdyGamerTools/MODS/NerdyGamerTools_AutoBroadcaster/NerdyGamerTools-NerdyGamerTools_AutoBroadcaster-3.0.0/)**
 
-## Preserved archive versions
+Current status: **🛠️ Packaging/source synchronization**
+
+The 3.0 scaffold intentionally does **not** contain a relabeled historical DLL. A matching current build should be produced before the 3.0 package is treated as releasable.
+
+## Preserved historical package versions
 
 - 1.0.0
 - 1.0.1
 
-## About AutoBroadcaster
+## Version distinction
 
-AutoBroadcaster is a dedicated-server scheduled broadcast mod for Valheim.
+| Location | Version represented |
+| --- | ---: |
+| Historical archive in this repository | 1.0.1 |
+| Maintained source repository | 2.0.0 |
+| Deep North package workspace | 3.0.0 scaffold |
 
-The current 2.0.0 source rebuild preserves the original minute-of-hour scheduling model and legacy configuration keys where practical while updating the implementation for Valheim 1.0.16.
-
-For current features, build instructions, configuration, migration details, and source code, use:
+For current source, build instructions, configuration, and migration details use:
 
 **https://github.com/Lhorath/NGT-AutoBroadcaster**
-
-## Archive follow-up
-
-When the 2.0.0 packaged release is ready to be archived here, add it as a new version folder rather than replacing 1.0.1.
 
 See:
 
 - [Compatibility Matrix](../../../docs/COMPATIBILITY.md)
-- [Valheim 1.0 Migration Tracker](../../../docs/VALHEIM-1.0-MIGRATION.md)
-- [Repository Version History](../../../docs/VERSION-HISTORY.md)
+- [Migration Tracker](../../../docs/VALHEIM-1.0-MIGRATION.md)
+- [Version History](../../../docs/VERSION-HISTORY.md)
 
-Historical version folders remain unchanged as release records.
+Historical version folders remain unchanged.

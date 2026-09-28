@@ -1,5 +1,5 @@
 # DabosGG 3.0 Mods
 
-No standalone DabosGG mod is present in the historical repository at this time.
+No standalone DabosGG mod is currently represented in the historical repository.
 
-This directory is retained for future DabosGG standalone mod migrations without using placeholder `crumb.txt` files.
+This directory is reserved for future standalone DabosGG Valheim 1.0 / Deep North mod migrations. No placeholder files are required.

@@ -1,44 +1,86 @@
 # Repository Version History
 
-This page is a repository-level index of preserved historical package snapshots plus active migration candidates.
+This page separates the preserved historical release archive from the active **3.0 Valheim 1.0 / Deep North migration candidates**.
 
-## Active Deep North migration candidates
+## Active 3.0 candidates
 
-These are **working 3.0.0 candidates**, not yet archival releases:
+| Namespace | Package | Candidate | Current state |
+| --- | --- | --- | --- |
+| DabosGG | DabosGG Vanilla Server Pack | [3.0.0](../DeepNorth%20Update/DabosGG/MODPACKS/DabosGG_Vanilla_Server_Pack/DabosGG-DabosGG_Vanilla_Server_Pack-3.0.0/) | 6-dependency baseline established; runtime/client testing pending |
+| DabosGG | DabosGG New Skills Pack | [3.0.0](../DeepNorth%20Update/DabosGG/MODPACKS/DabosGG_New_Skills_Pack/DabosGG-DabosGG_New_Skills_Pack-3.0.0/) | BepInEx-only baseline; replacement-skill search |
+| DabosGG | DabosGG New Content Pack | [3.0.0](../DeepNorth%20Update/DabosGG/MODPACKS/DabosGG_New_Content_Pack/DabosGG-DabosGG_New_Content_Pack-3.0.0/) | 17-dependency baseline established; runtime/client/world testing pending |
+| DabosGG | DabosGG Modded Server Pack | [3.0.0](../DeepNorth%20Update/DabosGG/MODPACKS/DabosGG_Modded_Server_Pack/DabosGG-DabosGG_Modded_Server_Pack-3.0.0/) | Pure aggregate of the three DabosGG component packs |
+| NerdyGamerTools | The Nerdy AzuPack | [3.0.0](../DeepNorth%20Update/NerdyGamerTools/MODPACKS/The_Nerdy_AzuPack/NerdyGamerTools-The_Nerdy_AzuPack-3.0.0/) | BepInEx-only baseline; maintained-source/replacement rebuild |
+| NerdyGamerTools | AutoBroadcaster | [3.0.0 scaffold](../DeepNorth%20Update/NerdyGamerTools/MODS/NerdyGamerTools_AutoBroadcaster/NerdyGamerTools-NerdyGamerTools_AutoBroadcaster-3.0.0/) | Packaging/source synchronization |
 
-| Namespace | Package | Candidate |
-| --- | --- | --- |
-| DabosGG | DabosGG Vanilla Server Pack | [3.0.0](../DeepNorth%20Update/DabosGG/MODPACKS/DabosGG_Vanilla_Server_Pack/DabosGG-DabosGG_Vanilla_Server_Pack-3.0.0/) |
-| DabosGG | DabosGG New Skills Pack | [3.0.0](../DeepNorth%20Update/DabosGG/MODPACKS/DabosGG_New_Skills_Pack/DabosGG-DabosGG_New_Skills_Pack-3.0.0/) |
-| DabosGG | DabosGG New Content Pack | [3.0.0](../DeepNorth%20Update/DabosGG/MODPACKS/DabosGG_New_Content_Pack/DabosGG-DabosGG_New_Content_Pack-3.0.0/) |
-| DabosGG | DabosGG Modded Server Pack | [3.0.0](../DeepNorth%20Update/DabosGG/MODPACKS/DabosGG_Modded_Server_Pack/DabosGG-DabosGG_Modded_Server_Pack-3.0.0/) |
-| NerdyGamerTools | The Nerdy AzuPack | [3.0.0](../DeepNorth%20Update/NerdyGamerTools/MODPACKS/The_Nerdy_AzuPack/NerdyGamerTools-The_Nerdy_AzuPack-3.0.0/) |
-| NerdyGamerTools | AutoBroadcaster | [3.0.0 scaffold](../DeepNorth%20Update/NerdyGamerTools/MODS/NerdyGamerTools_AutoBroadcaster/NerdyGamerTools-NerdyGamerTools_AutoBroadcaster-3.0.0/) |
+These 3.0 folders are active working candidates. They are not moved into the historical archive until the relevant migration/testing work is complete.
 
 ## Historical archive
 
 ### DabosGG Modded Server Pack
-Preserved: **0.0.1, 1.0.0, 1.1.0, 1.2.0, 1.2.1, 1.3.0, 1.4.0, 1.5.0**
+
+Preserved snapshots:
+
+**0.0.1, 1.0.0, 1.1.0, 1.2.0, 1.2.1, 1.3.0, 1.4.0, 1.5.0**
+
+Latest historical snapshot: **1.5.0**
 
 ### DabosGG New Content Pack
-Preserved: **1.0.0, 1.1.0, 1.1.2, 1.1.3, 1.2.0, 1.3.0, 1.5.0, 2.0.0**
+
+Preserved snapshots:
+
+**1.0.0, 1.1.0, 1.1.2, 1.1.3, 1.2.0, 1.3.0, 1.5.0, 2.0.0**
+
+Latest historical snapshot: **2.0.0**
 
 ### DabosGG New Skills Pack
-Preserved: **1.0.0, 1.0.1, 1.1.0, 1.5.0, 2.0.0**
+
+Preserved snapshots:
+
+**1.0.0, 1.0.1, 1.1.0, 1.5.0, 2.0.0**
+
+Latest historical snapshot: **2.0.0**
 
 ### DabosGG Vanilla Server Pack
-Preserved: **1.0.0, 1.0.1, 1.0.2, 1.1.0, 1.1.1, 1.5.0, 2.0.0**
+
+Preserved snapshots:
+
+**1.0.0, 1.0.1, 1.0.2, 1.1.0, 1.1.1, 1.5.0, 2.0.0**
+
+Latest historical snapshot: **2.0.0**
 
 ### The Nerdy AzuPack
-Preserved: **1.0.0**
+
+Preserved snapshots:
+
+**1.0.0**
+
+Latest historical snapshot: **1.0.0**
 
 ### NerdyGamerTools AutoBroadcaster
-Preserved in this archive: **1.0.0, 1.0.1**
 
-Maintained source repository: **https://github.com/Lhorath/NGT-AutoBroadcaster**
+Preserved packaged snapshots:
 
-The source repository contains a **2.0.0 rebuild documented for Valheim 1.0.16**. The new 3.0 folder is a migration/package scaffold and does not contain a relabeled historical DLL.
+**1.0.0, 1.0.1**
 
-## Historical documentation note
+Latest packaged historical snapshot: **1.0.1**
 
-Original version-folder documentation remains untouched even when stale. Use the 3.0 migration README files and [COMPATIBILITY.md](COMPATIBILITY.md) for current status.
+Maintained source repository:
+
+**https://github.com/Lhorath/NGT-AutoBroadcaster**
+
+Current documented source version: **2.0.0**, rebuilt for **Valheim 1.0.16**.
+
+The Deep North repository workspace separately contains a **3.0.0 package scaffold**.
+
+## Historical documentation policy
+
+README and CHANGELOG files inside historical version folders remain untouched even when their information is stale.
+
+Current package status belongs in:
+
+- package-level archive index README files;
+- the Deep North 3.0 package README/CHANGELOG;
+- [COMPATIBILITY.md](COMPATIBILITY.md);
+- [VALHEIM-1.0-MIGRATION.md](VALHEIM-1.0-MIGRATION.md);
+- the repository [CHANGELOG](../CHANGELOG.md).
