@@ -91,7 +91,15 @@ Smoothbrain mods may return later if they receive compatible updates.
 
 ### DabosGG New Content Pack
 
-Highest-risk audit. Review Deep North/biome content, prefabs, world systems, inventory, networking, NPC/marketplace systems, and upgrade safety for existing worlds.
+The 3.0 dependency-selection pass is complete for the current baseline.
+
+Current package contains **17 dependencies**:
+
+- 10 dependencies retained from 2.0 at newer versions;
+- 7 dependencies newly introduced in 3.0;
+- 14 dependencies from the 2.0 baseline removed for now.
+
+The next phase is runtime, client/server, configuration, multiplayer, and world compatibility testing. Because this pack changes creatures, equipment, progression, building, backpacks, and map behavior, both existing-world and new-world testing remain important.
 
 ### DabosGG Modded Server Pack
 
