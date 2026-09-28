@@ -79,7 +79,15 @@ Removed 2.0 dependencies remain candidates for reintroduction if they receive Va
 
 ### DabosGG New Skills Pack
 
-Audit every Smoothbrain skill mod and keep Farming excluded unless compatibility is deliberately re-established.
+All historical Smoothbrain dependencies have been removed from the 3.0 baseline because they have not yet been updated for Valheim 1.0 compatibility.
+
+Current dependency:
+
+- `denikson-BepInExPack_Valheim-5.4.2351`
+
+The pack is now in a **replacement-search phase**. The goal is to find maintained Valheim 1.0 skill-related mods covering the useful historical categories—or new progression systems that fit the same role.
+
+Smoothbrain mods may return later if they receive compatible updates.
 
 ### DabosGG New Content Pack
 
