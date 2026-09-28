@@ -20,6 +20,7 @@ These are the dependencies currently being retained because they are the maintai
 | `Advize-PlantEverything` | `1.21.3` | Retained / updated |
 | `ValheimModding-HookGenPatcher` | `0.0.4` | Retained |
 | `Searica-AdvancedTerrainModifiers` | `1.5.4` | Retained / updated |
+| `NerdyGamerTools-NerdyGamerTools_AutoBroadcaster` | `3.0.0` | Added for scheduled server broadcasts |
 
 ## Removed from the 3.0 baseline
 
@@ -59,7 +60,8 @@ The historic name **Vanilla Server Pack** is being retained for continuity, but 
 - use actively maintained Valheim 1.0 mods;
 - accept client-side requirements where a QoL mod needs them;
 - **do not promise vanilla-client or crossplay compatibility**;
-- reintroduce removed features when maintained replacements or updates become available.
+- reintroduce removed features when maintained replacements or updates become available;
+- include **NerdyGamerTools AutoBroadcaster** as the standard scheduled-broadcast server mod.
 
 ## 3.0 validation checklist
 
@@ -74,6 +76,7 @@ The historic name **Vanilla Server Pack** is being retained for continuity, but 
 - [ ] Test new-world loading.
 - [ ] Test multiplayer with all required client mods installed.
 - [ ] Test dedicated-server startup where applicable.
+- [ ] Verify AutoBroadcaster scheduling, Alert, Chat, and Both modes.
 - [ ] Document known incompatibilities.
 - [ ] Evaluate replacements for removed QoL features.
 - [ ] Mark the package release-ready only after runtime testing is complete.

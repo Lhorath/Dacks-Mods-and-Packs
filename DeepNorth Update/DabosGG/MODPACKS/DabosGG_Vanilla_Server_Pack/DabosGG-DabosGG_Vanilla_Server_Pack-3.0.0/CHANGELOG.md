@@ -10,6 +10,7 @@
 
 ### Updated
 
+- Added `NerdyGamerTools-NerdyGamerTools_AutoBroadcaster-3.0.0` as a Vanilla Server Pack dependency for scheduled server broadcasts.
 - `denikson-BepInExPack_Valheim`: `5.4.2333` → `5.4.2351`
 - `ValheimModding-Jotunn`: `2.29.0` → `2.30.2`
 - `Advize-PlantEasily`: `2.1.1` → `2.2.2`

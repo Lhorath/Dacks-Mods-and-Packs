@@ -4,6 +4,8 @@ This modpack is **curated and packaged for Dabos.GG game servers**.
 
 The individual mods and frameworks included in this pack are created and maintained by their respective authors/projects. DabosGG does not claim authorship of those third-party projects.
 
+**AutoBroadcaster is an original NerdyGamerTools/Lhorath release** included here as part of the Dabos.GG server baseline.
+
 ## Current 3.0 dependencies
 
 | Author / namespace | Project(s) included |
@@ -12,6 +14,7 @@ The individual mods and frameworks included in this pack are created and maintai
 | **ValheimModding** | Jotunn; HookGenPatcher |
 | **Advize** | PlantEasily; PlantEverything |
 | **Searica** | AdvancedTerrainModifiers |
+| **NerdyGamerTools / Lhorath** | AutoBroadcaster |
 
 ## Historical contributors
 

@@ -19,7 +19,7 @@ See [Namespace and Attribution Policy](../docs/NAMESPACE-POLICY.md).
 
 | Namespace | Package | Current 3.0 state | Dependency state |
 | --- | --- | --- | --- |
-| DabosGG | [Vanilla Server Pack](DabosGG/MODPACKS/DabosGG_Vanilla_Server_Pack/DabosGG-DabosGG_Vanilla_Server_Pack-3.0.0/) | Runtime/client testing | 6 selected dependencies |
+| DabosGG | [Vanilla Server Pack](DabosGG/MODPACKS/DabosGG_Vanilla_Server_Pack/DabosGG-DabosGG_Vanilla_Server_Pack-3.0.0/) | Runtime/client testing | 7 dependencies, including AutoBroadcaster |
 | DabosGG | [New Skills Pack](DabosGG/MODPACKS/DabosGG_New_Skills_Pack/DabosGG-DabosGG_New_Skills_Pack-3.0.0/) | Replacement search | BepInEx only |
 | DabosGG | [New Content Pack](DabosGG/MODPACKS/DabosGG_New_Content_Pack/DabosGG-DabosGG_New_Content_Pack-3.0.0/) | Runtime/client/world testing | 17 selected dependencies |
 | DabosGG | [Modded Server Pack](DabosGG/MODPACKS/DabosGG_Modded_Server_Pack/DabosGG-DabosGG_Modded_Server_Pack-3.0.0/) | Waiting on component packs | Aggregate of three DabosGG component packs |

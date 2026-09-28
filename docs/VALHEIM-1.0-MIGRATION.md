@@ -72,8 +72,9 @@ Currently retained:
 - `Advize-PlantEverything-1.21.3`
 - `ValheimModding-HookGenPatcher-0.0.4`
 - `Searica-AdvancedTerrainModifiers-1.5.4`
+- `NerdyGamerTools-NerdyGamerTools_AutoBroadcaster-3.0.0`
 
-The pack is now intentionally **QoL-focused rather than vanilla-client/crossplay-focused**. Some dependencies may require installation on clients. The next pass is runtime testing, client/server requirement verification, and rebuilding configs.
+The pack is now intentionally **QoL/server-focused rather than vanilla-client/crossplay-focused**. AutoBroadcaster is included as the standard scheduled-broadcast server mod. Some dependencies may require installation on clients. The next pass is runtime testing, client/server requirement verification, and rebuilding configs.
 
 Removed 2.0 dependencies remain candidates for reintroduction if they receive Valheim 1.0 updates or a maintained replacement is selected.
 

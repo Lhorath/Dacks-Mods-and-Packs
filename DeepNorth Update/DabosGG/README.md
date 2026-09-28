@@ -6,7 +6,7 @@ Packages here are curated specifically for Dabos.GG deployments. Third-party mod
 
 ## Modpacks
 
-- [Vanilla Server Pack 3.0.0](MODPACKS/DabosGG_Vanilla_Server_Pack/DabosGG-DabosGG_Vanilla_Server_Pack-3.0.0/) — QoL/server baseline.
+- [Vanilla Server Pack 3.0.0](MODPACKS/DabosGG_Vanilla_Server_Pack/DabosGG-DabosGG_Vanilla_Server_Pack-3.0.0/) — QoL/server baseline including NerdyGamerTools AutoBroadcaster.
 - [New Skills Pack 3.0.0](MODPACKS/DabosGG_New_Skills_Pack/DabosGG-DabosGG_New_Skills_Pack-3.0.0/) — skill/progression pack under rebuild.
 - [New Content Pack 3.0.0](MODPACKS/DabosGG_New_Content_Pack/DabosGG-DabosGG_New_Content_Pack-3.0.0/) — gameplay/content expansion pack.
 - [Modded Server Pack 3.0.0](MODPACKS/DabosGG_Modded_Server_Pack/DabosGG-DabosGG_Modded_Server_Pack-3.0.0/) — aggregate of the three component packs.

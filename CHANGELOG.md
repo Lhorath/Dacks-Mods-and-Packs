@@ -23,13 +23,15 @@ Historical package changelogs inside old version folders remain unchanged.
 
 ### DabosGG Vanilla Server Pack
 
-- Reduced the 3.0 manifest to six selected maintained dependencies:
+- Established the 3.0 Vanilla Server Pack baseline with seven dependencies:
   - `denikson-BepInExPack_Valheim-5.4.2351`
   - `ValheimModding-Jotunn-2.30.2`
   - `Advize-PlantEasily-2.2.2`
   - `Advize-PlantEverything-1.21.3`
   - `ValheimModding-HookGenPatcher-0.0.4`
   - `Searica-AdvancedTerrainModifiers-1.5.4`
+  - `NerdyGamerTools-NerdyGamerTools_AutoBroadcaster-3.0.0`
+- Added **NerdyGamerTools AutoBroadcaster** to the Vanilla Server Pack so scheduled server broadcasts are part of the baseline Dabos.GG server stack.
 - Reframed the pack as a **quality-of-life** package rather than a crossplay-first package.
 - Documented that some dependencies may require client installation.
 - Preserved removed 2.0 dependencies as possible future restoration/replacement candidates.

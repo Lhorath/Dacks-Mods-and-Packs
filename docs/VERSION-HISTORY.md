@@ -6,7 +6,7 @@ This page separates the preserved historical release archive from the active **3
 
 | Namespace | Package | Candidate | Current state |
 | --- | --- | --- | --- |
-| DabosGG | DabosGG Vanilla Server Pack | [3.0.0](../DeepNorth%20Update/DabosGG/MODPACKS/DabosGG_Vanilla_Server_Pack/DabosGG-DabosGG_Vanilla_Server_Pack-3.0.0/) | 6-dependency baseline established; runtime/client testing pending |
+| DabosGG | DabosGG Vanilla Server Pack | [3.0.0](../DeepNorth%20Update/DabosGG/MODPACKS/DabosGG_Vanilla_Server_Pack/DabosGG-DabosGG_Vanilla_Server_Pack-3.0.0/) | 7-dependency baseline established, including AutoBroadcaster; runtime/client testing pending |
 | DabosGG | DabosGG New Skills Pack | [3.0.0](../DeepNorth%20Update/DabosGG/MODPACKS/DabosGG_New_Skills_Pack/DabosGG-DabosGG_New_Skills_Pack-3.0.0/) | BepInEx-only baseline; replacement-skill search |
 | DabosGG | DabosGG New Content Pack | [3.0.0](../DeepNorth%20Update/DabosGG/MODPACKS/DabosGG_New_Content_Pack/DabosGG-DabosGG_New_Content_Pack-3.0.0/) | 17-dependency baseline established; runtime/client/world testing pending |
 | DabosGG | DabosGG Modded Server Pack | [3.0.0](../DeepNorth%20Update/DabosGG/MODPACKS/DabosGG_Modded_Server_Pack/DabosGG-DabosGG_Modded_Server_Pack-3.0.0/) | Pure aggregate of the three DabosGG component packs |

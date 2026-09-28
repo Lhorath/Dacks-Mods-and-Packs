@@ -32,7 +32,7 @@ The dependency-selection/reset pass has now been completed for the current 3.0 p
 
 | Namespace | Package | 3.0 state | Current dependency direction |
 | --- | --- | --- | --- |
-| DabosGG | [Vanilla Server Pack](DeepNorth%20Update/DabosGG/MODPACKS/DabosGG_Vanilla_Server_Pack/DabosGG-DabosGG_Vanilla_Server_Pack-3.0.0/) | Runtime/client testing | 6 maintained Valheim 1.0 dependencies; QoL-focused; no vanilla-client/crossplay guarantee |
+| DabosGG | [Vanilla Server Pack](DeepNorth%20Update/DabosGG/MODPACKS/DabosGG_Vanilla_Server_Pack/DabosGG-DabosGG_Vanilla_Server_Pack-3.0.0/) | Runtime/client testing | 7 dependencies including NerdyGamerTools AutoBroadcaster; QoL-focused; no vanilla-client/crossplay guarantee |
 | DabosGG | [New Skills Pack](DeepNorth%20Update/DabosGG/MODPACKS/DabosGG_New_Skills_Pack/DabosGG-DabosGG_New_Skills_Pack-3.0.0/) | Replacement search | BepInEx only while maintained skill/progression mods are identified |
 | DabosGG | [New Content Pack](DeepNorth%20Update/DabosGG/MODPACKS/DabosGG_New_Content_Pack/DabosGG-DabosGG_New_Content_Pack-3.0.0/) | Runtime/client/world testing | 17-dependency Valheim 1.0 content baseline |
 | DabosGG | [Modded Server Pack](DeepNorth%20Update/DabosGG/MODPACKS/DabosGG_Modded_Server_Pack/DabosGG-DabosGG_Modded_Server_Pack-3.0.0/) | Waiting on component packs | Aggregate only: Vanilla + New Skills + New Content |
@@ -64,6 +64,7 @@ Current manifest:
 - `Advize-PlantEverything-1.21.3`
 - `ValheimModding-HookGenPatcher-0.0.4`
 - `Searica-AdvancedTerrainModifiers-1.5.4`
+- `NerdyGamerTools-NerdyGamerTools_AutoBroadcaster-3.0.0`
 
 Removed historical QoL dependencies remain candidates for reintroduction if maintained updates or replacements become available.
 

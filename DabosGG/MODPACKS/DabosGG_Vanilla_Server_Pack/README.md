@@ -10,7 +10,7 @@ Current status: **🛠️ Dependency set established; runtime/client testing pen
 
 ## 3.0 direction
 
-The pack is now a maintained **quality-of-life** baseline for the DabosGG 3.0 stack.
+The pack is now a maintained **quality-of-life/server** baseline for the DabosGG 3.0 stack, including the original NerdyGamerTools AutoBroadcaster mod.
 
 It is no longer designed around guaranteed vanilla-client or crossplay compatibility. Some selected mods may require client-side installation.
 
@@ -22,6 +22,7 @@ Current dependencies:
 - `Advize-PlantEverything-1.21.3`
 - `ValheimModding-HookGenPatcher-0.0.4`
 - `Searica-AdvancedTerrainModifiers-1.5.4`
+- `NerdyGamerTools-NerdyGamerTools_AutoBroadcaster-3.0.0`
 
 Removed 2.0 dependencies are documented in the 3.0 README and may return if maintained updates or replacements are found.
 
