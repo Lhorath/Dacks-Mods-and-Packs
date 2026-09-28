@@ -1,0 +1,11 @@
+{
+  "name": "DabosGG_Modded_Server_Pack",
+  "version_number": "3.0.0",
+  "website_url": "https://thunderstore.io/c/valheim/p/DabosGG/DabosGG_Modded_Server_Pack/",
+  "description": "Valheim 1.0 / Deep North migration build of the DabosGG Modded Server Pack.",
+  "dependencies": [
+    "DabosGG-DabosGG_Vanilla_Server_Pack-3.0.0",
+    "DabosGG-DabosGG_New_Skills_Pack-3.0.0",
+    "DabosGG-DabosGG_New_Content_Pack-3.0.0"
+  ]
+}

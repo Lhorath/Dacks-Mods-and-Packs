@@ -1,0 +1,19 @@
+{
+  "name": "DabosGG_New_Skills_Pack",
+  "version_number": "3.0.0",
+  "website_url": "https://thunderstore.io/c/valheim/p/DabosGG/DabosGG_New_Skills_Pack/",
+  "description": "Valheim 1.0 / Deep North migration build of the DabosGG New Skills Pack.",
+  "dependencies": [
+    "Smoothbrain-Blacksmithing-1.3.3",
+    "Smoothbrain-Cooking-1.2.2",
+    "Smoothbrain-DualWield-1.0.10",
+    "Smoothbrain-Foraging-1.0.10",
+    "Smoothbrain-Ranching-1.1.6",
+    "Smoothbrain-Mining-1.1.6",
+    "Smoothbrain-Lumberjacking-1.0.6",
+    "Smoothbrain-PackHorse-1.0.4",
+    "Smoothbrain-Evasion-1.0.4",
+    "Smoothbrain-Tenacity-1.0.4",
+    "Smoothbrain-Exploration-1.0.4"
+  ]
+}

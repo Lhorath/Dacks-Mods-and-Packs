@@ -2,83 +2,65 @@
 
 Last reviewed: **2026-09-28**
 
-This file tracks current compatibility work for the packages preserved in this repository.
-
-## Reading this table
-
-- **Latest archived snapshot** means the newest packaged release currently preserved in this repository.
-- **Current source** is shown separately when active development happens in another repository.
-- A package version does **not** imply compatibility with the same Valheim version number.
-- Historical release folders are preserved as-is; current status belongs here and in package-level README files.
+This file tracks current compatibility work for the packages preserved in this repository and the new **Deep North 3.0** migration workspace.
 
 ## Valheim 1.0 status
 
-| Namespace | Package | Latest archived snapshot | Current source/rebuild | Status | Notes |
+| Namespace | Package | Latest historical snapshot | 3.0 migration package | Status | Notes |
 | --- | --- | ---: | --- | --- | --- |
-| DabosGG | DabosGG Modded Server Pack | 1.5.0 | — | 🟡 Needs validation/rebuild | Aggregate pack depends on the Vanilla, Skills, and Content packs, so those dependencies should be validated first. |
-| DabosGG | DabosGG New Content Pack | 2.0.0 | — | 🟡 Needs validation | April 2026 package predates Valheim 1.0 and requires dependency/config review. |
-| DabosGG | DabosGG New Skills Pack | 2.0.0 | — | 🟡 Needs validation | Historical 2.0.0 package version is not evidence of Valheim 1.0 compatibility. |
-| DabosGG | DabosGG Vanilla Server Pack | 2.0.0 | — | 🟡 Needs validation | QoL/server dependencies and crossplay assumptions need to be rechecked for Valheim 1.0. |
-| NerdyGamerTools | The Nerdy AzuPack | 1.0.0 | — | 🟡 Needs validation | Dependency list should be audited against maintained Valheim 1.0-compatible releases. |
-| NerdyGamerTools | NerdyGamerTools AutoBroadcaster | 1.0.1 | [2.0.0](https://github.com/Lhorath/NGT-AutoBroadcaster) | 🟢 Rebuilt for Valheim 1.0.16 | Active source repo contains a dedicated-server-only 2.0.0 rebuild targeting Valheim 1.0.16. Archive still stops at packaged 1.0.1. |
+| DabosGG | DabosGG Vanilla Server Pack | 2.0.0 | [3.0.0](../DeepNorth%20Update/DabosGG/MODPACKS/DabosGG_Vanilla_Server_Pack/DabosGG-DabosGG_Vanilla_Server_Pack-3.0.0/) | 🛠️ Dependency audit | Historical 2.0.0 dependency list carried forward as an unverified baseline. |
+| DabosGG | DabosGG New Skills Pack | 2.0.0 | [3.0.0](../DeepNorth%20Update/DabosGG/MODPACKS/DabosGG_New_Skills_Pack/DabosGG-DabosGG_New_Skills_Pack-3.0.0/) | 🛠️ Dependency audit | Farming remains excluded unless compatibility is deliberately re-established. |
+| DabosGG | DabosGG New Content Pack | 2.0.0 | [3.0.0](../DeepNorth%20Update/DabosGG/MODPACKS/DabosGG_New_Content_Pack/DabosGG-DabosGG_New_Content_Pack-3.0.0/) | 🛠️ Dependency audit | Deep North/content/world-system dependencies need the most scrutiny. |
+| DabosGG | DabosGG Modded Server Pack | 1.5.0 | [3.0.0](../DeepNorth%20Update/DabosGG/MODPACKS/DabosGG_Modded_Server_Pack/DabosGG-DabosGG_Modded_Server_Pack-3.0.0/) | 🛠️ Waiting on component packs | 3.0 aggregate points to the three DabosGG 3.0 component candidates. |
+| NerdyGamerTools | The Nerdy AzuPack | 1.0.0 | [3.0.0](../DeepNorth%20Update/NerdyGamerTools/MODPACKS/The_Nerdy_AzuPack/NerdyGamerTools-The_Nerdy_AzuPack-3.0.0/) | 🛠️ Dependency audit | The preserved 1.0.0 dependency set is the initial audit baseline. |
+| NerdyGamerTools | AutoBroadcaster | 1.0.1 | [3.0.0 scaffold](../DeepNorth%20Update/NerdyGamerTools/MODS/NerdyGamerTools_AutoBroadcaster/NerdyGamerTools-NerdyGamerTools_AutoBroadcaster-3.0.0/) | 🛠️ Packaging/source sync | Maintained [source repo](https://github.com/Lhorath/NGT-AutoBroadcaster) has a 2.0.0 rebuild documented for Valheim 1.0.16; no old DLL was copied into 3.0. |
 
 ## Status definitions
 
 ### 🟢 Updated
 
-A maintained rebuild exists for the stated Valheim target.
-
-This does not automatically mean every deployment scenario has been tested. Package-specific notes should record dedicated-server, client, and crossplay testing separately where relevant.
+A maintained rebuild exists and has passed the stated compatibility checks.
 
 ### 🟡 Needs validation
 
-No current compatibility conclusion should be inferred from the historical archive. Dependencies, configs, and runtime behavior still need review.
+No active migration work has established compatibility yet.
 
 ### 🛠️ Migration work
 
-Use this when active changes are underway and a package is intentionally between historical and current states.
+A 3.0 candidate exists, but dependencies/configs/runtime behavior are still being audited or tested.
 
 ### 📦 Legacy archive
 
-Use this for packages deliberately retained for history/reference and not intended for current deployment.
+Historical/reference package, not intended as a current deployment.
 
 ### ❌ Incompatible
 
-Use only after a concrete incompatibility has been confirmed.
+A concrete incompatibility has been confirmed.
+
+## 3.0 rule
+
+A `3.0.0` version number means **Deep North migration generation**, not “verified compatible.” The package README and this matrix remain authoritative for validation state.
 
 ## AutoBroadcaster
 
-The active source repository is:
+Active source repository:
 
 **https://github.com/Lhorath/NGT-AutoBroadcaster**
 
-The source repo documents **v2.0.0** as a rebuild for **Valheim 1.0.16** and retains the previous configuration model where practical.
-
-Repository distinction:
-
-| Location | Version currently represented |
-| --- | ---: |
-| Dacks-Mods-and-Packs archive | 1.0.1 |
-| NGT-AutoBroadcaster source repo | 2.0.0 |
-
-Until the 2.0.0 packaged snapshot is added to this archive, use the source repository as the current development reference.
+The source repository documents **v2.0.0** as a rebuild for **Valheim 1.0.16**. The 3.0 package scaffold in this repository intentionally contains metadata/documentation only until a matching 3.0 build is produced.
 
 ## Validation criteria
 
-A package should not be marked current solely because it launches once. Relevant checks include:
+Before changing a package to **Updated**, verify as applicable:
 
-- dependency is still maintained and compatible;
-- dependency version is correct in `manifest.json`;
-- no required dependency has been renamed/replaced;
+- dependency is maintained and Valheim 1.0 compatible;
+- manifest version is the intended maintained version;
+- renamed/replaced projects are handled explicitly;
 - game reaches menu without plugin load errors;
-- existing world can load;
-- new world can load where world-generation mods are involved;
-- dedicated server boots where applicable;
-- expected configuration files are accepted;
-- required client mods are documented;
-- vanilla-client behavior is documented;
-- crossplay behavior is verified where claimed;
+- existing and new worlds load as appropriate;
+- dedicated server boots;
+- configs are accepted by current mod versions;
+- client installation requirements are documented;
+- vanilla-client and crossplay behavior are actually tested when claimed;
 - representative gameplay features work;
 - logs contain no recurring compatibility exceptions.
-
-Update this file whenever one of those conclusions changes.

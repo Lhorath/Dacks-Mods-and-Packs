@@ -1,0 +1,9 @@
+{
+  "name": "NerdyGamerTools_AutoBroadcaster",
+  "version_number": "3.0.0",
+  "website_url": "https://github.com/Lhorath/NGT-AutoBroadcaster",
+  "description": "Deep North migration package scaffold for the Nerdy Gamer Tools AutoBroadcaster dedicated-server mod.",
+  "dependencies": [
+    "denikson-BepInExPack_Valheim-5.4.2202"
+  ]
+}

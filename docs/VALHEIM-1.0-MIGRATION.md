@@ -4,6 +4,10 @@ This is the working checklist for bringing the historical DabosGG and NerdyGamer
 
 The historical release folders are intentionally preserved. Migration work should produce new releases rather than rewriting old snapshots.
 
+## Deep North 3.0 initialization
+
+The **[DeepNorth Update](../DeepNorth%20Update/)** workspace is now initialized. All six maintained packages have a 3.0.0 migration folder with fresh metadata and dependency-history documentation. Historical package folders remain unchanged.
+
 ## Recommended order
 
 The DabosGG packs have dependencies between them, so the safest order is:
@@ -13,7 +17,7 @@ The DabosGG packs have dependencies between them, so the safest order is:
 3. **DabosGG New Content Pack**
 4. **DabosGG Modded Server Pack**
 5. **The Nerdy AzuPack**
-6. **AutoBroadcaster archive synchronization**
+6. **AutoBroadcaster 3.0 packaging/source synchronization**
 
 The Modded Server Pack should be rebuilt last because it aggregates the three DabosGG component packs.
 
@@ -21,14 +25,16 @@ The Modded Server Pack should be rebuilt last because it aggregates the three Da
 
 Use this checklist for every package:
 
-- [ ] Record the intended Valheim 1.0.x target.
+- [x] Create the 3.0.0 migration scaffold.
+- [x] Add a README showing currently included and historically removed dependencies.
+- [ ] Record the final intended Valheim 1.0.x target.
 - [ ] Audit every `manifest.json` dependency.
 - [ ] Confirm dependency project is still maintained.
 - [ ] Replace abandoned/incompatible dependencies where appropriate.
 - [ ] Confirm BepInEx requirement.
 - [ ] Confirm Jotunn requirement where applicable.
 - [ ] Review bundled `BepInEx/config` files for renamed/removed keys.
-- [ ] Remove obsolete generated/runtime files from the **new** release package.
+- [ ] Build fresh configs/binaries where applicable; do not relabel historical binaries.
 - [ ] Launch-test locally.
 - [ ] Check BepInEx log for exceptions.
 - [ ] Load an existing world.
@@ -37,125 +43,57 @@ Use this checklist for every package:
 - [ ] Verify required client-side installation behavior.
 - [ ] Verify vanilla-client compatibility where claimed.
 - [ ] Verify crossplay behavior where claimed.
-- [ ] Update README.
-- [ ] Update CHANGELOG.
-- [ ] Update `manifest.json`.
-- [ ] Build a new version folder.
+- [ ] Finalize README.
+- [ ] Finalize CHANGELOG.
+- [ ] Finalize `manifest.json`.
 - [ ] Update [COMPATIBILITY.md](COMPATIBILITY.md).
 - [ ] Update [VERSION-HISTORY.md](VERSION-HISTORY.md).
 
-## DabosGG Vanilla Server Pack
+## Package workspaces
 
-Latest archived snapshot: **2.0.0**
+- [DabosGG Vanilla Server Pack 3.0.0](../DeepNorth%20Update/DabosGG/MODPACKS/DabosGG_Vanilla_Server_Pack/DabosGG-DabosGG_Vanilla_Server_Pack-3.0.0/)
+- [DabosGG New Skills Pack 3.0.0](../DeepNorth%20Update/DabosGG/MODPACKS/DabosGG_New_Skills_Pack/DabosGG-DabosGG_New_Skills_Pack-3.0.0/)
+- [DabosGG New Content Pack 3.0.0](../DeepNorth%20Update/DabosGG/MODPACKS/DabosGG_New_Content_Pack/DabosGG-DabosGG_New_Content_Pack-3.0.0/)
+- [DabosGG Modded Server Pack 3.0.0](../DeepNorth%20Update/DabosGG/MODPACKS/DabosGG_Modded_Server_Pack/DabosGG-DabosGG_Modded_Server_Pack-3.0.0/)
+- [The Nerdy AzuPack 3.0.0](../DeepNorth%20Update/NerdyGamerTools/MODPACKS/The_Nerdy_AzuPack/NerdyGamerTools-The_Nerdy_AzuPack-3.0.0/)
+- [AutoBroadcaster 3.0.0](../DeepNorth%20Update/NerdyGamerTools/MODS/NerdyGamerTools_AutoBroadcaster/NerdyGamerTools-NerdyGamerTools_AutoBroadcaster-3.0.0/)
 
-Primary goal: re-establish the baseline QoL/server package before other DabosGG packs depend on it.
+## Package-specific priorities
 
-### Dependency review
+### DabosGG Vanilla Server Pack
 
-Historical 2.0.0 includes projects such as BepInExPack Valheim, Jotunn, PlantEasily, PlantEverything, ComfyMods building/QoL mods, AzuAutoStore, AzuCraftyBoxes, ItemDrawers, NoStamCosts, StumpsRegrow, and WardIsLove.
+Audit first. Re-evaluate storage/crafting overlap, configs, client requirements, and historical crossplay assumptions.
 
-- [ ] Check every historical dependency for a maintained Valheim 1.0-compatible release.
-- [ ] Confirm storage/crafting mods do not overlap incompatibly.
-- [ ] Re-evaluate the historical "vanilla/crossplay-friendly" description against the rebuilt dependency set.
-- [ ] Re-test server-side vs client-required behavior.
-- [ ] Rebuild forced/default configs from current mod versions rather than blindly carrying old configs forward.
+### DabosGG New Skills Pack
 
-## DabosGG New Skills Pack
+Audit every Smoothbrain skill mod and keep Farming excluded unless compatibility is deliberately re-established.
 
-Latest archived snapshot: **2.0.0**
+### DabosGG New Content Pack
 
-Historical package is centered on Smoothbrain skill mods.
+Highest-risk audit. Review Deep North/biome content, prefabs, world systems, inventory, networking, NPC/marketplace systems, and upgrade safety for existing worlds.
 
-- [ ] Verify each historical skill mod has a Valheim 1.0-compatible release.
-- [ ] Confirm skill identifiers/config keys have not changed.
-- [ ] Re-check the historical Farming exclusion/compatibility note.
-- [ ] Test skill gain, persistence, death penalties, and multiplayer sync.
-- [ ] Refresh the changelog; the archived 2.0.0 snapshot contains an older changelog header.
+### DabosGG Modded Server Pack
 
-## DabosGG New Content Pack
+Test after the three component packs are stable. Its 3.0.0 manifest already points to the 3.0.0 component candidates.
 
-Latest archived snapshot: **2.0.0**
+### The Nerdy AzuPack
 
-This is the highest-risk pack because it combines content, creatures, weapons, building pieces, inventory changes, map/server systems, and marketplace/NPC tooling.
+Audit every dependency for current package name/version and review interactions among inventory, crafting, storage, ward, and UI/QoL mods.
 
-- [ ] Audit all content dependencies.
-- [ ] Pay special attention to mods touching prefabs, world content, networking, inventory, and NPC systems.
-- [ ] Verify Deep North-related mods against Valheim 1.0's official Deep North content.
-- [ ] Check for obsolete pre-1.0 biome/content replacements.
-- [ ] Test existing worlds before recommending upgrade-in-place.
-- [ ] Test progression and crafting unlocks.
-- [ ] Validate marketplace/NPC configs.
-- [ ] Validate server-side map behavior.
-- [ ] Refresh package credits from the final dependency set.
+### NerdyGamerTools AutoBroadcaster
 
-## DabosGG Modded Server Pack
+Maintained source: **https://github.com/Lhorath/NGT-AutoBroadcaster**
 
-Latest archived snapshot: **1.5.0**
-
-This aggregate pack historically references the Vanilla, New Skills, and New Content packs.
-
-Do not rebuild this first.
-
-- [ ] Finish or establish target versions for all three component packs.
-- [ ] Update aggregate dependency versions.
-- [ ] Rebuild forced server configuration.
-- [ ] Review compatibility blacklist.
-- [ ] Run full dedicated-server smoke test.
-- [ ] Join with a correctly modded client.
-- [ ] Test crossplay/vanilla clients only if the final dependency model claims to support them.
-- [ ] Update package README version text.
-- [ ] Create a new release snapshot rather than modifying 1.5.0.
-
-## The Nerdy AzuPack
-
-Latest archived snapshot: **1.0.0**
-
-The historical package is a curated set of Azumatt mods plus related dependencies.
-
-- [ ] Audit every Azumatt dependency for current package names/versions.
-- [ ] Remove duplicates or superseded utilities.
-- [ ] Review configuration interactions among inventory, crafting, storage, ward, and UI/QoL mods.
-- [ ] Write full package documentation; the archived README is intentionally minimal.
-- [ ] Add a changelog for the next release.
-
-## NerdyGamerTools AutoBroadcaster
-
-Latest archived snapshot here: **1.0.1**
-
-Active source repository:
-
-**https://github.com/Lhorath/NGT-AutoBroadcaster**
-
-Current source version: **2.0.0**
-
-Target documented by the source repository: **Valheim 1.0.16**
-
-Completed in the source repository:
-
-- [x] Rebuilt plugin source for Valheim 1.0.16.
-- [x] Preserved minute-of-hour scheduling behavior.
-- [x] Preserved legacy config keys where practical.
-- [x] Kept the mod dedicated-server only.
-- [x] Avoided a custom client network handshake.
-- [x] Added per-message enable switches.
-- [x] Added debug logging configuration.
-- [x] Documented source build process and migration from 1.0.1.
-
-Archive follow-up:
-
-- [ ] Add the final 2.0.0 packaged snapshot to this repository when ready.
-- [ ] Include its README, changelog, manifest, icon, and release DLL/package contents as appropriate.
-- [ ] Update [VERSION-HISTORY.md](VERSION-HISTORY.md) after the archive snapshot is added.
+The source repo already documents a 2.0.0 Valheim 1.0.16 rebuild. The 3.0 scaffold must receive a matching rebuilt DLL/source version before it is publishable.
 
 ## Definition of done
 
-A migrated package is ready to be marked **Updated** when:
+A 3.0 package is ready to be marked **Updated** when:
 
 1. dependency audit is complete;
 2. configs are based on current dependency versions;
-3. local runtime test passes;
-4. applicable dedicated-server test passes;
-5. client requirements are documented;
-6. crossplay claim, if any, is actually verified;
-7. a new immutable release snapshot is created;
-8. README/changelog/manifest describe that new release accurately.
+3. required binaries are rebuilt rather than copied from incompatible history;
+4. local runtime test passes;
+5. applicable dedicated-server test passes;
+6. client and crossplay requirements are documented and tested where claimed;
+7. README/changelog/manifest describe the final package accurately.
