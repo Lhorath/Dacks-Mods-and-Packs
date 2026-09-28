@@ -1,0 +1,20 @@
+# Changelog
+## Latest Version = 1.1.0 - March 19, 2024
+
+All notable changes to the DABOS.gg Valheim ModPack will be documented in this file.
+
+## [Version 1.1.0]
+### Added
+
+- Added Explore Together.
+
+### Removed
+- Removed Jewelcrafting as is incompatible with Epicloot.
+
+## [Version 1.0.0]
+### Added
+- Added Initial Dependencies.
+
+### Removed
+- None.
+

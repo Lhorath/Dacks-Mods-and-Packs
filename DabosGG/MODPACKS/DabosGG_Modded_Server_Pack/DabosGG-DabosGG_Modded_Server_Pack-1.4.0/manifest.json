@@ -1,0 +1,11 @@
+{
+    "name": "DabosGG_Modded_Server_Pack",
+    "version_number": "1.4.0",
+    "website_url": "https://dabos.gg/",
+    "description": "This is the ModPack to be Used for Dabos.GG Modded Server",
+    "dependencies": [
+        "DabosGG-DabosGG_Vanilla_Server_Pack-1.1.1",
+	"DabosGG-DabosGG_New_Skills_Pack-1.1.0",
+	"DabosGG-DabosGG_New_Content_Pack-1.3.0"
+    ]
+}

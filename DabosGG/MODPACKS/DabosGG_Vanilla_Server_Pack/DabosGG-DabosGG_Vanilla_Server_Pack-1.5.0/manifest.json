@@ -1,0 +1,16 @@
+{
+    "name": "DabosGG_Vanilla_Server_Pack",
+    "version_number": "1.5.0",
+    "website_url": "https://dabos.gg/",
+    "description": "This is the ModPack to be Used for Dabos.GG Servers, Mods Collected In this Package will not affect crossplay users. QOL Improvements",
+    "dependencies": [
+        "denikson-BepInExPack_Valheim-5.4.2202",
+	"ValheimModding-Jotunn-2.21.3",
+	"Advize-PlantEasily-1.9.2",
+	"Advize-PlantEverything-1.18.2",
+	"ComfyMods-PotteryBarn-1.18.0",
+	"ComfyMods-SearsCatalog-1.6.0",
+	"Tekla-AutoRepair-5.4.1602",
+	"ValheimModding-HookGenPatcher-0.0.4"
+    ]
+}

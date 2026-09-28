@@ -1,0 +1,19 @@
+{
+    "name": "DabosGG_New_Skills_Pack",
+    "version_number": "1.5.0",
+    "website_url": "https://dabos.gg/",
+    "description": "This is the ModPack to be Used for Dabos.GG Servers, Mods Collected In this Package are exclusively focused on adding new Skills",
+    "dependencies": [
+  "Smoothbrain-Blacksmithing-1.3.1",
+	"Smoothbrain-Cooking-1.2.0",
+	"Smoothbrain-DualWield-1.0.9",
+	"Smoothbrain-Foraging-1.0.9",
+	"Smoothbrain-Ranching-1.1.3",
+	"Smoothbrain-Mining-1.1.5",
+	"Smoothbrain-Lumberjacking-1.0.5",
+	"Smoothbrain-PackHorse-1.0.3",
+	"Smoothbrain-Evasion-1.0.3",
+	"Smoothbrain-Tenacity-1.0.3",
+	"Smoothbrain-Exploration-1.0.3"
+    ]
+}

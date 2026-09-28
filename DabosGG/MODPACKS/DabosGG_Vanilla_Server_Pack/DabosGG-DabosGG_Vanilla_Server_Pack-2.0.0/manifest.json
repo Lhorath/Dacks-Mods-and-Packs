@@ -1,0 +1,23 @@
+{
+    "name": "DabosGG_Vanilla_Server_Pack",
+    "version_number": "2.0.0",
+    "website_url": "https://dabos.gg/",
+    "description": "This is the ModPack to be Used for Dabos.GG Servers, Mods Collected In this Package Should not affect crossplay users. QOL Improvements",
+    "dependencies": [
+    "denikson-BepInExPack_Valheim-5.4.2333",
+	"ValheimModding-Jotunn-2.29.0",
+	"Advize-PlantEasily-2.1.1",
+	"Advize-PlantEverything-1.20.0",
+	"ComfyMods-PotteryBarn-1.20.0",
+	"ComfyMods-SearsCatalog-1.8.0",
+	"ComfyMods-ComfyAutoRepair-1.0.0",
+	"ValheimModding-HookGenPatcher-0.0.4",
+    "Searica-AdvancedTerrainModifiers-1.4.1",
+    "Azumatt-AzuAutoStore-3.0.14",
+    "Azumatt-AzuCraftyBoxes-1.8.14",
+    "makail-ItemDrawers-0.5.8",
+    "BasilPanda-NoStamCosts-0.1.2",
+    "Advize-StumpsRegrow-1.0.5",
+    "Azumatt-WardIsLove-3.7.2"
+    ]
+}

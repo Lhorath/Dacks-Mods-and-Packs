@@ -1,0 +1,9 @@
+{
+    "name": "DabosGG_New_Content_Pack",
+    "version_number": "1.5.0",
+    "website_url": "https://dabos.gg/",
+    "description": "This is the ModPack to be Used for Dabos.GG Servers, Mods Collected In this Package add something entirely new to the game",
+    "dependencies": [
+        "OdinPlus-ShrinkMe-1.0.3"
+    ]
+}

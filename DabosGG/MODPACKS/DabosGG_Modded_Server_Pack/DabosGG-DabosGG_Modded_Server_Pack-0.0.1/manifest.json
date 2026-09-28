@@ -1,0 +1,9 @@
+{
+    "name": "DabosGG_Modded_Server_Pack",
+    "version_number": "0.0.1",
+    "website_url": "https://discord.gg/rwwfbF8",
+    "description": "This is the ModPack to be Used for Dabos.GG Modded Server",
+    "dependencies": [
+        "bbepis-BepInExPack-5.4.2113"
+    ]
+}
