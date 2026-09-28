@@ -8,7 +8,7 @@ This file tracks current compatibility work for the packages preserved in this r
 
 | Namespace | Package | Latest historical snapshot | 3.0 migration package | Status | Notes |
 | --- | --- | ---: | --- | --- | --- |
-| DabosGG | DabosGG Vanilla Server Pack | 2.0.0 | [3.0.0](../DeepNorth%20Update/DabosGG/MODPACKS/DabosGG_Vanilla_Server_Pack/DabosGG-DabosGG_Vanilla_Server_Pack-3.0.0/) | 🛠️ Dependency audit | Historical 2.0.0 dependency list carried forward as an unverified baseline. |
+| DabosGG | DabosGG Vanilla Server Pack | 2.0.0 | [3.0.0](../DeepNorth%20Update/DabosGG/MODPACKS/DabosGG_Vanilla_Server_Pack/DabosGG-DabosGG_Vanilla_Server_Pack-3.0.0/) | 🛠️ Runtime/client testing | Dependency list narrowed to six maintained Valheim 1.0 migration dependencies. 3.0 is QoL-focused and no longer promises vanilla-client/crossplay compatibility. |
 | DabosGG | DabosGG New Skills Pack | 2.0.0 | [3.0.0](../DeepNorth%20Update/DabosGG/MODPACKS/DabosGG_New_Skills_Pack/DabosGG-DabosGG_New_Skills_Pack-3.0.0/) | 🛠️ Dependency audit | Farming remains excluded unless compatibility is deliberately re-established. |
 | DabosGG | DabosGG New Content Pack | 2.0.0 | [3.0.0](../DeepNorth%20Update/DabosGG/MODPACKS/DabosGG_New_Content_Pack/DabosGG-DabosGG_New_Content_Pack-3.0.0/) | 🛠️ Dependency audit | Deep North/content/world-system dependencies need the most scrutiny. |
 | DabosGG | DabosGG Modded Server Pack | 1.5.0 | [3.0.0](../DeepNorth%20Update/DabosGG/MODPACKS/DabosGG_Modded_Server_Pack/DabosGG-DabosGG_Modded_Server_Pack-3.0.0/) | 🛠️ Waiting on component packs | 3.0 aggregate points to the three DabosGG 3.0 component candidates. |

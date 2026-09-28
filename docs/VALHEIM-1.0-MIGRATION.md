@@ -62,7 +62,20 @@ Use this checklist for every package:
 
 ### DabosGG Vanilla Server Pack
 
-Audit first. Re-evaluate storage/crafting overlap, configs, client requirements, and historical crossplay assumptions.
+The dependency-selection pass is complete for the initial 3.0 baseline.
+
+Currently retained:
+
+- `denikson-BepInExPack_Valheim-5.4.2351`
+- `ValheimModding-Jotunn-2.30.2`
+- `Advize-PlantEasily-2.2.2`
+- `Advize-PlantEverything-1.21.3`
+- `ValheimModding-HookGenPatcher-0.0.4`
+- `Searica-AdvancedTerrainModifiers-1.5.4`
+
+The pack is now intentionally **QoL-focused rather than vanilla-client/crossplay-focused**. Some dependencies may require installation on clients. The next pass is runtime testing, client/server requirement verification, and rebuilding configs.
+
+Removed 2.0 dependencies remain candidates for reintroduction if they receive Valheim 1.0 updates or a maintained replacement is selected.
 
 ### DabosGG New Skills Pack
 
