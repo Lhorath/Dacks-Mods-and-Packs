@@ -4,13 +4,19 @@
 
 ### Added
 
-- Initialized the Valheim 1.0 / Deep North compatibility workspace for **NerdyGamerTools AutoBroadcaster**.
-- Added a fresh 3.0.0 package manifest.
-- Added dependency-history documentation covering currently included and historically removed dependencies.
-- Reused the previous package icon for continuity.
-- Initialized packaging metadata from the maintained AutoBroadcaster source repository; no legacy DLL was copied into the 3.0 scaffold.
+- Initialized the Deep North / 3.0 package-generation workspace for **NerdyGamerTools AutoBroadcaster**.
+- Linked the maintained source repository:
+  - https://github.com/Lhorath/NGT-AutoBroadcaster
+- Reused the package icon for continuity.
 
-### Compatibility
+### Source synchronization
 
-- Dependency versions are currently a migration baseline and are **not yet considered Valheim 1.0 verified** unless explicitly documented otherwise.
-- Historical release folders remain unchanged.
+- The maintained source repository currently documents **AutoBroadcaster 2.0.0** as rebuilt for **Valheim 1.0.16**.
+- The 3.0 package scaffold retains `denikson-BepInExPack_Valheim-5.4.2202` from the current source package metadata.
+- The source rebuild already contains the Valheim 1.0 compatibility work; this repository still needs the matching current packaged binary/release contents.
+
+### Packaging
+
+- No legacy 1.0.1 DLL has been copied or relabeled as 3.0.0.
+- The 3.0 package is not release-ready until a matching current build is produced and smoke-tested.
+- Historical packaged versions remain unchanged.

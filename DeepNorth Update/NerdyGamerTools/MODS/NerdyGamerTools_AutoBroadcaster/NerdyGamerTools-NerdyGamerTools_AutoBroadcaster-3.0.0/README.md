@@ -2,43 +2,70 @@
 
 **Migration workspace:** Valheim 1.0 / Deep North  
 **Package version:** `3.0.0`  
-**State:** **Compatibility audit baseline — not yet release-ready**
+**State:** **Packaging/source synchronization — not yet packaged**
 
-Dedicated-server scheduled broadcast mod. The maintained source repository already contains a 2.0.0 rebuild documented for Valheim 1.0.16; this 3.0.0 folder initializes the Deep North package-generation track.
+AutoBroadcaster is a dedicated-server scheduled broadcast mod for Valheim.
 
-> The dependency versions below are an **audit starting point**, not a blanket compatibility claim. They were carried forward from the current 2.0.0 source metadata unless otherwise noted. Each dependency should be verified and updated before this package is published.
+The maintained source repository currently documents **AutoBroadcaster 2.0.0** as rebuilt for **Valheim 1.0.16**:
 
-## 3.0.0 baseline — currently included
+**https://github.com/Lhorath/NGT-AutoBroadcaster**
 
-| Dependency | Baseline version |
-| --- | ---: |
-| `denikson-BepInExPack_Valheim` | `5.4.2202` |
+This 3.0.0 folder is the Deep North package-generation workspace. It exists to prepare the next packaged release without modifying or relabeling the historical 1.0.x binaries.
 
-## Migration notes
+## Current 3.0 package metadata
 
-**No DLL is copied into this 3.0.0 scaffold.** The old 1.0.1 binary must not be relabeled as 3.0.0. Build/package the matching 3.0 source before this folder is treated as publishable.
+| Dependency | Version | Source |
+| --- | ---: | --- |
+| `denikson-BepInExPack_Valheim` | `5.4.2202` | Current AutoBroadcaster 2.0.0 source metadata |
 
-## Historical mods no longer included
+The dependency string is inherited from the maintained source repository's current package metadata. It should only change when the matching AutoBroadcaster source/package is intentionally updated.
 
-No package dependencies are recorded as removed in the preserved history.
+## Source state
 
-## 3.0 validation checklist
+The maintained source already documents the major Valheim 1.0 migration work, including:
 
-- [ ] Confirm every dependency is maintained for Valheim 1.0.
-- [ ] Replace obsolete or incompatible dependencies.
-- [ ] Update dependency versions in `manifest.json`.
-- [ ] Rebuild configuration files from current mod versions where applicable.
-- [ ] Launch-test against the target Valheim 1.0 build.
-- [ ] Review BepInEx log for plugin/config errors.
-- [ ] Test dedicated-server behavior where applicable.
-- [ ] Document client requirements and crossplay behavior.
-- [ ] Update this history if a dependency is added, removed, or replaced.
-- [ ] Mark the package release-ready only after the audit is complete.
+- rebuild for Valheim 1.0.16;
+- dedicated-server-only operation;
+- vanilla-client compatibility without a custom client handshake;
+- minute-of-hour scheduling;
+- Alert, Chat, or Both delivery modes;
+- live configuration reload;
+- per-message enable switches;
+- debug logging controls;
+- removal of the old Steam_0 log-suppression workaround;
+- build documentation for the current source.
 
-## Source / upstream
+## Packaging rule
 
-Maintained source repository: **https://github.com/Lhorath/NGT-AutoBroadcaster**
+**Do not copy the archived 1.0.1 DLL into this 3.0 folder and relabel it.**
+
+A matching current build must be produced from the maintained source before this package is considered releasable.
+
+## Historical packaged versions
+
+The archive outside **DeepNorth Update** currently preserves:
+
+- 1.0.0
+- 1.0.1
+
+The maintained source repository is newer than those packaged snapshots.
+
+## 3.0 checklist
+
+- [x] Create a 3.0 package scaffold.
+- [x] Link the maintained source repository.
+- [x] Preserve the source package dependency metadata.
+- [x] Keep historical binaries out of the new package.
+- [ ] Produce the matching current DLL/build for the 3.0 package generation.
+- [ ] Confirm the final package manifest against the source release.
+- [ ] Dedicated-server smoke test the packaged build.
+- [ ] Verify Alert mode.
+- [ ] Verify Chat mode.
+- [ ] Verify Both mode.
+- [ ] Verify live config reload.
+- [ ] Verify vanilla-client behavior.
+- [ ] Finalize package README/changelog and archive the completed release.
 
 ## History policy
 
-The versioned packages outside **DeepNorth Update** remain the authoritative historical snapshots. This 3.0.0 folder is the working migration package and may change until compatibility testing is complete.
+Historical release folders remain unchanged. Current source development belongs in the AutoBroadcaster source repository; this workspace tracks packaging for the Dacks-Mods-and-Packs archive.
