@@ -2,15 +2,16 @@
 
 ## [3.0.0] - Unreleased
 
-### Added
+### Changed
 
-- Initialized the Valheim 1.0 / Deep North compatibility workspace for **DabosGG Modded Server Pack**.
-- Added a fresh 3.0.0 package manifest.
-- Added dependency-history documentation covering currently included and historically removed dependencies.
-- Reused the previous package icon for continuity.
-- Updated aggregate dependencies to the three DabosGG 3.0.0 migration packages.
+- Defined the Modded Server Pack as a pure aggregate package.
+- The 3.0 manifest contains only the three DabosGG component packs:
+  - `DabosGG-DabosGG_Vanilla_Server_Pack-3.0.0`
+  - `DabosGG-DabosGG_New_Skills_Pack-3.0.0`
+  - `DabosGG-DabosGG_New_Content_Pack-3.0.0`
+- Individual mod dependencies are intentionally managed only by their respective component packs.
 
 ### Compatibility
 
-- Dependency versions are currently a migration baseline and are **not yet considered Valheim 1.0 verified** unless explicitly documented otherwise.
-- Historical release folders remain unchanged.
+- Aggregate testing should begin only after the three component packs have reached a stable 3.0 baseline.
+- The Modded Server Pack inherits the client/server requirements and compatibility constraints of all three component packs.

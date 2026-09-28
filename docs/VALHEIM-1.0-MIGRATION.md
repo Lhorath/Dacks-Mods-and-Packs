@@ -103,7 +103,13 @@ The next phase is runtime, client/server, configuration, multiplayer, and world 
 
 ### DabosGG Modded Server Pack
 
-Test after the three component packs are stable. Its 3.0.0 manifest already points to the 3.0.0 component candidates.
+The 3.0.0 aggregate structure is finalized: its manifest contains **only** the three DabosGG component packs.
+
+- `DabosGG-DabosGG_Vanilla_Server_Pack-3.0.0`
+- `DabosGG-DabosGG_New_Skills_Pack-3.0.0`
+- `DabosGG-DabosGG_New_Content_Pack-3.0.0`
+
+Individual mods should never be added directly to the aggregate manifest. Test the Modded Server Pack only after the three component packs are stable.
 
 ### The Nerdy AzuPack
 
