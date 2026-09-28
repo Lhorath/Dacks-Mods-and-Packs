@@ -113,7 +113,20 @@ Individual mods should never be added directly to the aggregate manifest. Test t
 
 ### The Nerdy AzuPack
 
-Audit every dependency for current package name/version and review interactions among inventory, crafting, storage, ward, and UI/QoL mods.
+The historical dependency audit is complete for the initial 3.0 reset.
+
+The active 3.0 manifest now contains only:
+
+- `denikson-BepInExPack_Valheim-5.4.2351`
+
+Several historical Azumatt packages received Valheim 1.0 fixes but their Thunderstore package lines are now deprecated, while other historical dependencies never received a maintained native 1.0 update. The old dependency list has therefore been removed rather than frozen into the new pack.
+
+Next steps:
+
+- identify maintained current sources for desired Azumatt features;
+- decide whether to support a mixed repository/package-manager workflow;
+- select maintained replacements where needed;
+- rebuild and runtime-test the final 3.0 dependency set.
 
 ### NerdyGamerTools AutoBroadcaster
 
